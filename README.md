@@ -1,10 +1,1 @@
- AI Patient Vital Monitor & Emergency DetectorAn intelligent, clinical-grade dashboard designed to detect "Code Blue" emergencies in real-time. This project leverages Machine Learning to monitor patient stability and provides an interactive, high-visibility interface for ICU-level surveillance.🏥 Project OverviewThis application serves as a decision-support tool for healthcare providers. By analyzing seven critical physiological markers, the AI determines if a patient is stable or requires immediate clinical intervention.When a critical state is detected, the system triggers a "Siren" mode, providing automated emergency protocols (e.g., IV Access, STAT labs, and Oxygen administration) to assist medical staff.🧠 FeaturesAI-Powered Diagnostics: Utilizes a trained Scikit-Learn model to predict patient status.Hospital-Themed UI: A custom CSS-driven Streamlit interface featuring pulsing animations and high-contrast alert cards for emergency visibility.Automated Clinical Logic: Real-time flagging of conditions like Tachycardia, Hypoxia, and Hypertensive Crisis.Full ML Pipeline: Integrated scripts for data preprocessing, scaling, training, and model evaluation.📊 Monitored Vital SignsThe system processes the following features to determine patient risk:Cardiovascular: Heart Rate (bpm) & Systolic BP (mmHg)Respiratory: Resp Rate (br/min) & Oxygen Saturation ($SpO_2$)Hemodynamics: Diastolic BP & Mean Arterial Pressure (MAP)Thermoregulation: Body Temperature (°C)🛠️ Tech StackFrontend: Streamlit (Custom CSS/HTML injection)Machine Learning: Scikit-Learn, NumPy, PandasModel Persistence: Joblib (for model and scaler serialization)📂 Project StructurePlaintext├── data/               # Patient time-series datasets
-├── src/                # Backend logic (Preprocess, Train, Evaluate)
-├── models/             # Saved .pkl files (Model & Scaler)
-├── app.py              # Main Streamlit dashboard application
-├── main.py             # Execution script for the ML pipeline
-└── requirements.txt    # Project dependencies
-🚀 Installation & UsageClone the Repo:Bashgit clone https://github.com/your-username/patient-vital-monitor.git
-Install Dependencies:Bashpip install -r requirements.txt
-Run the ML Pipeline:Bashpython main.py
-Launch the Dashboard:Bashstreamlit run app.py
+
